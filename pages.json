@@ -1,0 +1,467 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/index",
+			"style": {
+				"navigationBarTitleText": "问医云",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/tabBar/category",
+			"style": {
+				"navigationBarTitleText": "诊疗项目",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/tabBar/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/login/forgetpwd",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/login/region",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/search/searchResult",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "购物车",
+				"navigationBarBackgroundColor": "#FECF05",
+				"navigationBarTextStyle": "black"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pages/index/search",
+		"pages": [{
+			"path": "xiangqin",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 80
+			}
+		}, {
+			"path": "shouyintai",
+			"style": {
+				"navigationBarTitleText": "收银台",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "querendingdan",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FECF05"
+			}
+		}]
+	}, {
+		"root": "pages/index/live",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText":"直播",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+		// "plugins": {
+		// 	"live-player-plugin": {
+		// 		"version": "1.3.2",
+		// 		"provider": "wx2b03c6e691cd7370",
+		// 	}
+		// }
+	}, {
+		"root": "pages/index/article",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText":"详情",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "detail",
+				"style": {
+					"navigationBarTitleText":"用户协议",
+					"navigationBarTextStyle": "black"
+				}
+			}
+		]
+	},
+	{
+		"root": "pages/index/zhuanjiatuandui",
+		"pages": [{
+			"path": "zhuanjiatuandui",
+			"style": {
+				"navigationBarTitleText":"",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FECF05"
+			}
+		}]
+	}, {
+		"root": "pages/yanxuanshangcheng/jifenchanpin",
+		"pages": [{
+			"path": "liebiao",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "积分产品列表"
+				// "navigationBarBackgroundColor": "#FECF05"
+			}
+		}, {
+			"path": "chanpin",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "积分产品"
+				// "navigationBarBackgroundColor": "#FECF05"
+			}
+		}]
+	}, {
+		"root": "pages/yanxuanshangcheng/dijiapintuan",
+		"pages": [{
+			"path": "dijiapintuan",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "",
+				"onReachBottomDistance":100
+			}
+		}]
+	}, {
+		"root": "pages/yanxuanshangcheng/rexiaoxiangqin",
+		"pages": [{
+			"path": "rexiaoxiangqin",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "商品详情"
+			}
+		}]
+	}, {
+		"root": "pages/index/xiufu",
+		"pages": [{
+			"path": "xiufu",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+				// "navigationBarBackgroundColor": "#FECF05"
+			}
+		}]
+	}, {
+		"root": "pages/users/order",
+		"pages": [{
+			"path": "list",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarBackgroundColor": "#FECF05",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "querendingdan",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				// "navigationBarBackgroundColor": "#FECF05",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "tijiaodingdan",
+			"style": {
+				"navigationBarTitleText": "提交订单",
+				// "navigationBarBackgroundColor": "#FECF05",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "comment",
+			"style": {
+				"navigationBarTitleText": "订单评价"
+			}
+		},{
+			"path": "Detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#FECF05"
+			}
+		},{
+			"path": "wkorderDetail",
+			"style": {
+				"navigationBarTitleText": "加载中..."
+			}
+		},{
+			"path": "combinationStatus",
+			"style": {
+				"navigationBarTitleText": "拼团详情",
+				"navigationBarBackgroundColor": "#FECF05"
+			}
+		}]
+	},{
+		"root": "pages/users/sale",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "售后服务",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "refund",
+				"style": {
+					"navigationBarTitleText": "我要退款",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "restep",
+				"style": {
+					"navigationBarTitleText": "退款进度",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "refundPro",
+				"style": {
+					"navigationBarTitleText": "我要退货退款",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "detail",
+				"style": {
+					"navigationBarTitleText": "退款详情",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "exchange",
+				"style": {
+					"navigationBarTitleText": "我要换货",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "exchangeDetail",
+				"style": {
+					"navigationBarTitleText": "换货详情",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/follow",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的关注",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05",
+					"enablePullDownRefresh":true
+				}
+			}
+		]
+	},{
+		"root": "pages/users/subscribe",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的预约",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/collect",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的收藏",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/share",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "分享码",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/team",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的团队"
+				}
+			},
+			{
+				"path": "list",
+				"style": {
+					"navigationBarTitleText": "加载中..."
+				}
+			}
+		]
+	},{
+		"root": "pages/users/comment",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的评论",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "detail",
+				"style": {
+					"navigationBarTitleText": "订单评价",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/info",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "个人信息",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "bind",
+				"style": {
+					"navigationBarTitleText": "绑定手机号",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "hbind",
+				"style": {
+					"navigationBarTitleText": "换绑手机号",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	},{
+		"root": "pages/users/address",
+		"pages": [
+			{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我的地址",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			},
+			{
+				"path": "xinjiandizhi",
+				"style": {
+					"navigationBarTitleText": "新建收货地址",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FECF05"
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "问医云",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#B4B4B4",
+		"selectedColor": "#000000",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabBar/index",
+				"iconPath": "static/tabBar/home.png",
+				"selectedIconPath": "static/tabBar/home-active.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/tabBar/category",
+				"iconPath": "static/tabBar/znxm.png",
+				"selectedIconPath": "static/tabBar/znxm-active.png",
+				"text": "诊疗项目"
+			},
+			{
+				"pagePath": "pages/tabBar/user",
+				"iconPath": "static/tabBar/user.png",
+				"selectedIconPath": "static/tabBar/user-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}
